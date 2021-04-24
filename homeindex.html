@@ -1,0 +1,148 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Book Search</title>
+  <link rel="stylesheet" type="text/css" href="/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body class="body">
+
+  <!-- Navigation Bar  -->
+  <div class="container">
+  
+      <div class="col-md-12" >
+        <nav class="col-md-12 navbar nav navbar-expand-lg navbar-light sm-light nava">
+          <a class="nav" href="/templates" style="color: lavenderblush; font-size: large;">Book Search</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" style="color: lavenderblush" href="/templates">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" style="color: lavenderblush" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Dropdown
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Something</a>
+                  <a class="dropdown-item" href="#">Something else</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Last something</a>
+                </div>
+              </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="color: lavenderblush" ></button>Search</button>
+            </form>
+          </div>
+        </nav>
+      </div>
+    
+  </div>
+    <!-- End Navigation bar -->
+ 
+  <div class="container">
+
+  <!-- Cover -->
+    <div class="row">
+      <div class="col-md-12 jumbotron text-center"style="background-image: url(/assets/header%20photo.jpg);background-size: cover; background-position: center; height: 200px; border: 1px solid black; "></div>
+    </div>
+  <!-- End Cover -->
+
+  <!-- information about webpage -->
+  <div class ="row">
+    <div class="col-md-12 jumbotron text-center" style="padding-top: 10px !important;
+    padding-bottom: 10px !important;">
+    <h1 style="color:#050505; text-align:center; font-weight: bold; opacity: 1.0;"> Book Recommender </h1>
+        
+          <p >
+            Use the Dropdown below to select your preferred genre. blah blah blah blah blah blah blah blah blah blah blah blah  
+            blah blah blah blah blah blah blah blah blah blah blah blah blah
+          </p>
+        
+    </div>
+
+  </div>
+  <!-- End Information -->
+  
+
+  </div>
+
+  <div class= "container">
+    <div class="row">  
+
+  <!-- Dropdown for genre selection -->
+      <div class="col-md-4">
+        <label for="painted house">Have you read A Painted House?</label>
+
+        <select id="painted house">
+          <option value="Yes">Yes</option>
+          <option value="No" selected>No</option>
+        </select>
+      </div> 
+    </div>
+        
+  <!-- End dropdown -->
+
+  <!-- Chart for data Cover -->
+
+      <div class="col-md-8">
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h3 class="panel-title">Book Information</h3>
+          </div>
+          <div id="sample-metadata" class="panel-body"></div>
+        </div>
+      </div>
+    </div>
+  <!-- End Dropdown -->
+
+
+  <!-- Start Genre list-->
+  <select name= genres method="GET" action="/">
+    {% for genre in genres %}
+    <option value= "{{genre}}" SELECTED>{{genres}}</option>"
+    {% endfor %}
+  </select>
+  
+  
+  
+  
+  
+    <div class="col-md-10">
+          <div id="gender_bar"></div>
+        </div>
+        <div class="col-md-10">
+          <div id="major_bar"></div>
+        </div>
+      <div class="row">
+        <div class="col-lg-10">
+          <div id="education_bar"></div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="{{ url_for('static', filename="file_name")}}"></script>
+  
+</body>
+
+</html>
+=======
+<h1>Hello</h1>
+<p> My name is Brian</p>
+>>>>>>> e425cbcb23ce4152ec79c085a4e76798fcb8eb57
