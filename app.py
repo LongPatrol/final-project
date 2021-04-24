@@ -27,7 +27,7 @@ app = Flask(__name__)
 # 3. Define what to do when a user hits the index route
 @app.route("/")
 def home():
-    return render_template("index.html",)
+    return render_template("homeindex.html",)
   # return "Welcome to my 'info' page!"
 
 # 4. Define what to do when a user hits the /about route
