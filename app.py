@@ -1,5 +1,5 @@
 # import necessary libraries
-from models import create_classes
+#from models import create_classes
 import os
 from flask import (
     Flask,
@@ -27,9 +27,8 @@ app = Flask(__name__)
 # 3. Define what to do when a user hits the index route
 @app.route("/")
 def home():
-    print("Server received request for 'Home' page...")
-    return "Welcome to our 'Home' page!"
-
+    return render_template("index.html",)
+  # return "Welcome to my 'info' page!"
 
 # 4. Define what to do when a user hits the /about route
 @app.route("/about")
