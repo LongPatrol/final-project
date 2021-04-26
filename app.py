@@ -28,7 +28,7 @@ import app_model
 # 3. Define what to do when a user hits the index route
 @app.route("/")
 def home():
-    return render_template("homeindex.html",)
+    return render_template("homeindex.html")
   # return "Welcome to my 'info' page!"
 
 # 4. Define what to do when a user hits the /about route
@@ -38,7 +38,7 @@ def about():
     return "Welcome to my 'About' page!"
 
 @app.route("/results")
-def about():
+#def about():
     #10 parameters for the 10 books we're using instead of the username and password
     #username = request.args.get('username')
     #password = request.args.get('password')
