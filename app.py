@@ -47,12 +47,14 @@ def about():
     #new_book_data = [[0,0,0,0,0,0,0,0,0,1]]
     #predicted_class = Pickled_book_model.predict(new_book_data)
     
-    if predicted_class == 0:
-        return "Shoot! The user will not buy Bridget Jones's Diary"
-    elif predicted_class == 1:
-        return "The user will buy Bridget Jones's Diary. Yay!"
-    else:
-        return "Something went horribly wrong" 
+    # if predicted_class == 0:
+    #     return "Shoot! The user will not buy Bridget Jones's Diary"
+    # elif predicted_class == 1:
+    #     return "The user will buy Bridget Jones's Diary. Yay!"
+    # else:
+    #     return "Something went horribly wrong" 
+    
+    return "Results page placeholder"
         
 
 if __name__ == "__main__":
