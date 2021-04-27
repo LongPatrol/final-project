@@ -37,16 +37,24 @@ def about():
     print("Server received request for 'About' page...")
     return "Welcome to my 'About' page!"
 
+<<<<<<< HEAD
+=======
+#Making changes here
+@app.route("/results/<book_one>/<book_two>/<book_three>/<book_four>/<book_five>/<book_six>/<book_seven>/<book_eight>/<book_nine>/<book_ten>")
+def run_model(book_one, book_two, book_three, book_four, book_five, book_six, book_seven, book_eight, book_nine, book_ten):
+
+>>>>>>> 75322ac6c7b7a5c3bd6bb9ae0806733c461717d9
 #@app.route("/results")
 #def about():
     #10 parameters for the 10 books we're using instead of the username and password
     #username = request.args.get('username')
     #password = request.args.get('password')
 
-   #Do prediction here: take values from parameters; 
-    #new_book_data = [[0,0,0,0,0,0,0,0,0,1]]
-    #predicted_class = Pickled_book_model.predict(new_book_data)
+    #Do prediction here: take values from parameters; 
+    new_book_data = [[book_one, book_two, book_three, book_four, book_five, book_six, book_seven, book_eight, book_nine, book_ten]]
+    predicted_class = app_model.Pickled_book_model.predict(new_book_data)
     
+<<<<<<< HEAD
     # if predicted_class == 0:
     #     return "Shoot! The user will not buy Bridget Jones's Diary"
     # elif predicted_class == 1:
@@ -54,6 +62,16 @@ def about():
     # else:
     #     return "Something went horribly wrong" 
     # return "Results page placeholder"
+=======
+    if predicted_class == 0:
+        return "Shoot! The user will not buy Bridget Jones's Diary"
+    elif predicted_class == 1:
+        return "The user will buy Bridget Jones's Diary. Yay!"
+    else:
+        return "Something went horribly wrong" 
+    
+    return "Results page placeholder"
+>>>>>>> 75322ac6c7b7a5c3bd6bb9ae0806733c461717d9
         
 
 if __name__ == "__main__":
