@@ -39,9 +39,23 @@ def about():
     return "Welcome to my 'About' page!"
 
 #Making changes here
-@app.route("/results/<book_one>/<book_two>/<book_three>/<book_four>/<book_five>/<book_six>/<book_seven>/<book_eight>/<book_nine>/<book_ten>")
-def run_model(book_one, book_two, book_three, book_four, book_five, book_six, book_seven, book_eight, book_nine, book_ten):
+@app.route("/results", methods=['POST', 'GET'])
+def run_model():
+    #book_one, book_two, book_three, book_four, book_five, book_six, book_seven, book_eight, book_nine, book_ten
+    print("args:", request.args)
+    print("form:", request.values)
 
+    book_one = int(request.values.get("paintedhouse"))
+    book_two = int(request.values.get("AngelsDemons"))
+    book_three = int(request.values.get("TheLovelyBones"))
+    book_four = int(request.values.get("LifeofPi"))
+    book_five = int(request.values.get("TheDaVinciCode"))
+    book_six = int(request.values.get("DivineSecrets"))
+    book_seven = int(request.values.get("TheNannyDiaries"))
+    book_eight = int(request.values.get("TheRedTent"))
+    book_nine = int(request.values.get("TheSecretLifeofBees"))
+    book_ten = int(request.values.get("WildAnimus"))
+    
     new_book_data = [[book_one, book_two, book_three, book_four, book_five, book_six, book_seven, book_eight, book_nine, book_ten]]
     predicted_class = app_model.Pickled_book_model.predict(new_book_data)
     
