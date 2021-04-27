@@ -41,6 +41,8 @@ def about():
 @app.route("/results/<book_one>/<book_two>/<book_three>/<book_four>/<book_five>/<book_six>/<book_seven>/<book_eight>/<book_nine>/<book_ten>")
 def run_model(book_one, book_two, book_three, book_four, book_five, book_six, book_seven, book_eight, book_nine, book_ten):
 
+#@app.route("/results")
+#def about():
     #10 parameters for the 10 books we're using instead of the username and password
     #username = request.args.get('username')
     #password = request.args.get('password')
