@@ -37,7 +37,7 @@ def about():
     print("Server received request for 'About' page...")
     return "Welcome to my 'About' page!"
 
-@app.route("/results")
+#@app.route("/results")
 #def about():
     #10 parameters for the 10 books we're using instead of the username and password
     #username = request.args.get('username')
@@ -53,8 +53,7 @@ def about():
     #     return "The user will buy Bridget Jones's Diary. Yay!"
     # else:
     #     return "Something went horribly wrong" 
-    
-    return "Results page placeholder"
+    # return "Results page placeholder"
         
 
 if __name__ == "__main__":
