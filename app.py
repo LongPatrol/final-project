@@ -41,6 +41,9 @@ def about():
 #Making changes here
 @app.route("/results", methods=['POST', 'GET'])
 def run_model():
+
+    # test = request.form.get("paintedhouse")
+    # return str(test)
     #book_one, book_two, book_three, book_four, book_five, book_six, book_seven, book_eight, book_nine, book_ten
     print("args:", request.args)
     print("form:", request.values)
