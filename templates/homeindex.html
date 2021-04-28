@@ -1,223 +1,114 @@
 <!DOCTYPE html>
-<html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Book Search</title>
-  <link rel="stylesheet" type="text/css" href="/static/style.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <meta charset="UTF-8">
+    <title>Web-Design Challenge</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/Static/style.css" media="screen" type="text/css">
 </head>
+  
+
 
 <html>
-<body  style="background-color: #222222; font-family: Arial, Helvetica, sans-serif; background: repeating-linear-gradient(45deg, #2b2b2b 0%, #2b2b2b 10%, #222222 0%, #222222 50%) 0 / 15px 15px;">
-  <div class="container" >
- 
-  <!-- Navigation Bar  -->
-  
-  
-        <nav class="navbar navbar-light sm-light">
-          <a class="navbar-brand" href="/templates" style="color: lavenderblush; font-size: large;">Book Search</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+<body>
+    <!--Navigation Bar -->
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">Web-Design Challenge</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item ">
-                <a class="nav-link" style="color: lavenderblush" href="/templates">Home <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" style="color: lavenderblush" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Dropdown
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">Something</a>
-                  <a class="dropdown-item" href="#">Something else</a>
-                  <a class="dropdown-item" href="#">Last something</a>
-                </div>
-              </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="color: lavenderblush" ></button>Search</button>
-            </form>
-          </div>
-        </nav>
-     
-  
-    <!-- End Navigation bar -->
- 
-  <div class="container">
-
-  <!-- Cover -->
-    <div class="row">
-      <div class="col-md-12 jumbotron text-center"style="background-image: url(/assets/header%20photo.jpg);background-size: cover; background-position: center; height: 200px; border: 1px solid black; "></div>
-    </div>
-  <!-- End Cover -->
-
-  <!-- information about webpage -->
-  <div class ="row">
-    <div class="col-md-12 jumbotron text-center" style="padding-top: 10px !important;
-    padding-bottom: 10px !important;">
-    <h1 style="color:#050505; text-align:center; font-weight: bold; opacity: 1.0;"> Book Recommender </h1>
-        
-          <p >
-            Use the Dropdown below to select your preferred genre.  
-            
-          </p>
-        
-    </div>
-
-  </div>
-</div>
-  <!-- End Information -->
-  
-
-  
-
-  <div class= "container">
-
-  <!-- Dropdown for genre selection -->
-  <div class="row">
-  <form action="/action_page.php" id="genreform">
-    <button class="w3-button w3-black" style ="float: left; color: lawngreen;" type="button submit"><label for="fname" style="color:lavenderblush">Please Press submit once ready!</label></button>
-  </form>
-  </div>
-    <div class="row">  
-      <div  class="col-md-6">
-        <label class="label" style="color:lavenderblush" for="paintedhouse" form="genreform">Have you read A Painted House?</label>
-
-        <select id="paintedhouse">
-          <option value="1">Yes</option>
-          <option value="0" selected>No</option>
-        </select>
-      </div> 
-    </div>
-
-    <div class="row">  
-      <div class="col-md-6">
-        <label class= "label" style="color:lavenderblush" for="AngelsDemons" form="genreform">Have you read Angels & Demons?</label>
-
-        <select id="AngelsDemons">
-          <option value="1">Yes</option>
-          <option value="0" selected>No</option>
-        </select>
-      </div> 
-    </div>
-
-    <div class="row">  
-      <div  class="col-md-6">
-        <label class="label" style="color:lavenderblush" for="TheLovelyBones" form="genreform">Have you read The Lovely Bones: A Novel?</label>
-
-        <select id="TheLovelyBones">
-          <option value="1">Yes</option>
-          <option value="0" selected>No</option>
-        </select>
-      </div> 
-    </div>
-
-    <div class="row">  
-      <div  class="col-md-6">
-        <label class="label" style="color:lavenderblush" for="LifeofPi" form="genreform">Have you read Life of Pi?</label>
-
-        <select id="LifeofPi">
-          <option value="1">Yes</option>
-          <option value="0" selected>No</option>
-        </select>
-      </div> 
-    </div>
-
-    <div class="row">  
-      <div  class="col-md-6">
-        <label class="label" style="color:lavenderblush" for="TheDaVinciCode" form="genreform">Have you read The Da Vinci Code?</label>
-
-        <select id="TheDaVinciCode">
-          <option value="1">Yes</option>
-          <option value="0" selected>No</option>
-        </select>
-      </div> 
-    </div>
-
-    <div class="row">  
-      <div  class="col-md-6">
-        <label class="label" style="color:lavenderblush" for="DivineSecrets" form="genreform">Have you read Divine Secrets of the Ya-Ya Sisterhood: A Novel?</label>
-
-        <select id="DivineSecrets">
-          <option value="1">Yes</option>
-          <option value="0" selected>No</option>
-        </select>
-      </div> 
-    </div>
-
-    <div class="row">  
-      <div  class="col-md-6">
-        <label class="label" style="color:lavenderblush" for="TheNannyDiaries" form="genreform">Have you read The Nanny Diaries: A Novel?</label>
-
-        <select id="TheNannyDiaries">
-          <option value="1">Yes</option>
-          <option value="0" selected>No</option>
-        </select>
-      </div> 
-    </div>
-
-    <div class="row">  
-      <div  class="col-md-6">
-        <label class="label" style="color:lavenderblush" for="TheRedTent" form="genreform">Have you read The Red Tent (Bestselling Backlist)?</label>
-
-        <select id="TheRedTent">
-          <option value="1">Yes</option>
-          <option value="0" selected>No</option>
-        </select>
-      </div> 
-    </div>
-
-    <div class="row">  
-      <div  class="col-md-6">
-        <label class="label" style="color:lavenderblush" for="TheSecretLifeofBees" form="genreform">Have you read The Secret Life of Bees?</label>
-
-        <select id="TheSecretLifeofBees">
-          <option value="1">Yes</option>
-          <option value="0" selected>No</option>
-        </select>
-      </div> 
-    </div>
-
-    <div class="row">  
-      
-        <label class="label" style="color:lavenderblush" for="WildAnimus" form="genreform">Have you read Wild Animus?</label>
-
-        <select id="WildAnimus">
-          <option value="1">Yes</option>
-          <option value="0" selected>No</option>
-        </select>
-      </div> 
-    </div>   
-  <!-- End dropdown -->
-
-  <!-- Chart for data Cover -->
-
-      <div class="col-md-8">
-        <div class="panel panel-primary">
-          <div class="panel-heading">
-            <h3 class="panel-title">Book Information</h3>
-          </div>
-          <div id="sample-metadata" class="panel-body"></div>
-        </div>
-      </div>
+        </button>
     
-  <!-- End Dropdown -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                
+                <li class="nav-item">
+                  <a class="nav-link" href="comparisons.html">Comparisons</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Visuals
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="/Templates/Visuals/cloudiness.html">Cloudiness</a>
+                    <a class="dropdown-item" href="/Templates/Visuals/humidity.html">Humidity</a>
+                    <a class="dropdown-item" href="/Templates/Visuals/max_temp.html">Maximum Temperature</a>
+                    <a class="dropdown-item" href="/Templates/Visuals/wind_speed.html">Wind Speeds</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="data.html">Data</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Summary</h5>
+                        <img src="../assets/heatminer-sea-temperature-1.jpg" alt="" width='65%' height='100%' align='left' style='margin: 0px 20px 20px 0px'>
+                        <p>
+                            The purpose of this project was to analyze different weather properties in relation to latitude.
+                            The dataset used in this project derive from a previous project where I was tasked with randomly generating over 500 latitudes, finding the nearest city, and then pulling weather data from the OpenWeatherAPI by latitude.
+                        </p>
+                        <p>
+                            All analysis and graphing in this project was performed using Matplotlib, Pandas and Numpy. 
+                            Elements of the weather studied in this project include maximum temperature, cloudiness, humidity, and wind speed. 
+                            This site contains all the visualizations created, as well the dataset used.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Visualizations</h5>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-3 col-md-6">
+                                    <a href="/Templates/Visuals/cloudiness.html"><img src="../Resources/assets/Lat_vs_Cloud.png" alt="" class="img-thumbnail"></a>
+                                </div>
+                                <div class="col-3 col-md-6">
+                                    <a href="/Templates/Visuals/humidity.html"><img src="../Resources/assets/Lat_vs_Humidity.png" alt="" class="img-thumbnail"></a>
+                                </div>
+
+                            
+                                <div class="col-3 col-md-6">
+                                    <a href="/Templates/Visuals/max_temp.html"><img src="../Resources/assets/Lat_vs_Temp.png" alt="" class="img-thumbnail"></a>
+                                </div>
+                                <div class="col-3 col-md-6">
+                                    <a href="/Templates/Visuals/wind_speed.html"><img src="../Resources/assets/lat_vs_wind.png" alt="" class="img-thumbnail"></a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
-  
-      
-  </div>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
-  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-  <script src="{{ url_for('static', filename="file_name")}}"></script>
-  </div>
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
 </body>
+
+
+
+
+
 </html>
